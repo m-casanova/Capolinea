@@ -43,7 +43,7 @@ a.ref { font-size: 60%; vertical-align: super; font-weight: 700 }
 
 hr { border:0; border-bottom: 1px solid #666; margin: 20px; padding:0 }
 
-.testo { color: #000; width:90%; margin: 20px 10px; border: 1px solid #888; font-family:"test2", sans-serif; font-size:64pt; background: #f3f1ea; padding: 4px; font-feature-settings: 'ss01'; line-height: 0.8em }
+.testo { color: #000; width:90%; margin: 20px 10px; border: 1px solid #888; font-family:"test2", sans-serif; font-size:64pt; background: #f3f1ea; padding: 4px; line-height: 0.8em }
 
 footer { padding:0; margin:0; width: 100%; background: #666; color: #fff }
 footer > div { padding:40 0; margin:0 auto; width: 1180px }
@@ -55,7 +55,10 @@ div.side {width: 249px; margin: 30px 0 0; padding:10px 10px 5px; float:left; bor
 
 p.capol { font-family: "test3", sans-serif; font-size: 18pt; line-height: 1.2em; border-left: 5px solid #ccc; padding-left: 10px; margin: 15px 0 15px 20px; }
 p.capol:first-letter { font-family: "test2", sans-serif; float: left; font-size: 6em; margin: 0.05em 0.1em 0 0; color: #c9211e }
-
+	
+p.alfa { font-family: "test2", sans-serif; font-size: 48pt; margin: 15px 0; color: #c9211e  }
+.ss01 { font-feature-settings: 'ss01'; color: #a00 }
+	
 @media only screen and (max-width: 1200px) {
  header > div > div { width: 100%; }
  section { width: 100% }
@@ -90,7 +93,9 @@ p.capol:first-letter { font-family: "test2", sans-serif; float: left; font-size:
 			<h3>Descrizione</h3>
 			
 			<p>Il font "Capolinea" è basato su scansioni dei capolettera del XV secolo di Günther Zainer (<a href="https://tw.staatsbibliothek-berlin.de/html/gftview.xql?url=../gft/GfT0667.png&gft=GfT0667" target="_blank">GfT0667</a>,
-			<a href="https://tw.staatsbibliothek-berlin.de/html/gftview.xql?url=../gft/GfT0668.png&gft=GfT0668" target="_blank">GfT0668</a>), estraendo solo la forma della lettera. Non è presente la lettera <i>X</i>.</p>
+			<a href="https://tw.staatsbibliothek-berlin.de/html/gftview.xql?url=../gft/GfT0668.png&gft=GfT0668" target="_blank">GfT0668</a>), estraendo solo la forma della lettera.</p>
+			<p>Non è presente la lettera <i>X</i>. Sono presenti varianti per le lettere <i>A D I S</i>, accessibili tramite caratteristica '<b>ss01</b>'.</p>
+			<p class="alfa">A <span class="ss01">A</span> B C D <span class="ss01">D</span> E F G H I <span class="ss01">I</span> J K L M N O P Q R S <span class="ss01">S</span> T U V W X Y Z</p>
 			<h3>Esempi</h3>
 			<p>Utilizzo del font <i>Capolinea</i> con il <a href="https://github.com/m-casanova/Vermiglione">font Vermiglione</a>:</p>
 			<p class="capol">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus dolor eget tellus tincidunt, sit amet mollis ante luctus. Quisque non est maximus, tempus tellus at, faucibus tortor. In quis placerat nibh. Vivamus eu ante imperdiet, aliquet enim id, mattis orci. Cras et magna id nisl iaculis sollicitudin. Nunc ut erat et sapien posuere auctor. Donec sed augue eleifend, vestibulum est eget, rhoncus leo.</p>
